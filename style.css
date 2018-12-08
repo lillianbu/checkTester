@@ -1,0 +1,157 @@
+:root {
+    --main-color: rgb(0, 151, 167);
+}
+
+/* Fonts */
+
+body {
+    font-family: 'Biryani', sans-serif;
+    background-color: lightgray;
+    margin: 0;
+}
+
+h1, h2, h3, .navbar ul {
+    font-family: 'Biryani', serif !important;
+}
+
+/* Navbar */
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-color);
+    font-size: 25px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 10px 12px 12px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: var(--main-color);
+}
+
+/* Title */
+
+#title-check {
+    font-size: 40px;
+}
+
+#title-check-img {
+    border-radius: 5px;
+}
+
+.btn {
+    background: var(--main-color);
+    font-size: 18px;
+    color: #FFF;
+    padding: 12px 22px;
+}
+
+/* Image upload CSS: https://bootsnipp.com/snippets/eNbOa */
+.btn-file {
+    position: relative;
+    background: var(--main-color) !important;
+    color: #FFF !important;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* #sample-ballot {
+    cursor: pointer;
+} */
+
+/* Button coloring */
+
+#submit-btn, .results-btn {
+    border: 1px solid #111 !important;
+}
+
+#submit-btn > a {
+    color: #FFF !important;
+}
+
+#submit-btn:hover, .results-btn:hover {
+    color: #FFF !important;
+    background: #00b0f0bd;
+}
+
+#submit-btn:hover > a {
+    text-decoration: none !important;
+}
+
+.results-btn {
+    margin-bottom: 10px !important;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0rem;
+    text-align: center;
+    z-index:-1;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+/* Padding */
+
+.input-row {
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+}
+
+@media (max-width: 900px) {
+    .input-row {
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .input-row {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .input-row {
+        margin-left: 3% !important;
+        margin-right: 3% !important;
+    }
+}
